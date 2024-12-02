@@ -23,10 +23,6 @@ def index():
 def recommend_ui():
     return render_template('recommend.html')
 
-@app.route('/something')
-def something():
-    return "Something"
-
 @app.route('/recommend_books',methods=['post'])
 def recommend():
     user_input = request.form.get('user_input') 
